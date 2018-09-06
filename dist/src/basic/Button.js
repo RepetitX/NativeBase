@@ -41,8 +41,8 @@ return(0,_computeProps2.default)(this.props,defaultProps);
 }},{key:"render",value:function render()
 {var _this2=this;
 var variables=this.context.theme?
-this.context.theme["@@shoutem.theme/themeStyle"].variables:_platform2.default;
-
+this.context.theme["@@shoutem.theme/themeStyle"].variables:
+_platform2.default;
 var children=
 _reactNative.Platform.OS==="ios"?
 this.props.children:
@@ -110,8 +110,8 @@ active:_propTypes2.default.bool});
 
 var StyledButton=(0,_nativeBaseShoutemTheme.connectStyle)(
 "NativeBase.Button",
-{},_mapPropsToStyleNames2.default)(
-
+{},
+_mapPropsToStyleNames2.default)(
 Button);exports.
 Button=StyledButton;
 //# sourceMappingURL=Button.js.map
