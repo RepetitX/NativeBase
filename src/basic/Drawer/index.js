@@ -22,7 +22,7 @@ Drawer.defaultProps = {
 			shadowColor: "#000000",
 			shadowOpacity: 0,
 			shadowRadius: 0,
-			elevation: 5,
+			elevation: 9, //
 		},
 		mainOverlay: {
 			opacity: 0,
