@@ -44,7 +44,7 @@ color:this.props.checked===true?variables.checkboxTickColor:"transparent",
 fontSize:variables.CheckboxFontSize,
 lineHeight:variables.CheckboxIconSize},
 
-name:platform==="ios"&&platformStyle!=="material"?"ios-checkmark-outline":"md-checkmark",__source:{fileName:_jsxFileName,lineNumber:41}})));
+name:platform==="ios"&&platformStyle!=="material"?"ios-checkmark":"md-checkmark",__source:{fileName:_jsxFileName,lineNumber:41}})));
 
 
 

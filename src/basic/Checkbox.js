@@ -44,7 +44,7 @@ class CheckBox extends Component {
 						fontSize: variables.CheckboxFontSize,
 						lineHeight: variables.CheckboxIconSize,
 					}}
-					name={platform === "ios" && platformStyle !== "material" ? "ios-checkmark-outline" : "md-checkmark"}
+					name={platform === "ios" && platformStyle !== "material" ? "ios-checkmark" : "md-checkmark"}
 				/>
 			</TouchableOpacity>
 		);
