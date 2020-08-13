@@ -1,5 +1,6 @@
 Object.defineProperty(exports,"__esModule",{value:true});exports.List=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName="src/basic/List.js";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=require("react");var _react2=_interopRequireDefault(_react);
 var _reactNative=require("react-native");
+var _deprecatedReactNativeListview=require("deprecated-react-native-listview");var _deprecatedReactNativeListview2=_interopRequireDefault(_deprecatedReactNativeListview);
 var _nativeBaseShoutemTheme=require("native-base-shoutem-theme");
 
 var _SwipeRow=require("./SwipeRow");
@@ -25,7 +26,7 @@ _this._rows={};
 _this.openCellId=null;
 if(props.dataArray&&props.renderRow){
 var rowHasChanged=props.rowHasChanged||function(r1,r2){return r1!==r2;};
-var ds=new _reactNative.ListView.DataSource({rowHasChanged:rowHasChanged});
+var ds=new _deprecatedReactNativeListview2.default.DataSource({rowHasChanged:rowHasChanged});
 _this.state={
 dataSource:ds.cloneWithRows(props.dataArray)};
 
@@ -168,7 +169,7 @@ this.props.renderRightHiddenRow(rowData,secId,rowId,this._rows),
 
 body:
 this.props.renderRow&&
-this.props.renderRow(rowData,secId,rowId,this._rows),__source:{fileName:_jsxFileName,lineNumber:120}}));
+this.props.renderRow(rowData,secId,rowId,this._rows),__source:{fileName:_jsxFileName,lineNumber:121}}));
 
 
 
@@ -176,7 +177,7 @@ this.props.renderRow(rowData,secId,rowId,this._rows),__source:{fileName:_jsxFile
 {var _this3=this;
 if(this.props.renderLeftHiddenRow||this.props.renderRightHiddenRow){
 return(
-_react2.default.createElement(_reactNative.ListView,_extends({},
+_react2.default.createElement(_deprecatedReactNativeListview2.default,_extends({},
 this.props,{
 ref:function ref(_ref){
 _this3.setRefs(_ref);
@@ -185,23 +186,23 @@ _this3._root=_ref;
 enableEmptySections:true,
 onScroll:function onScroll(e){return _this3.onScroll(e);},
 renderRow:function renderRow(rowData,secId,rowId){return(
-_this3.renderRow(rowData,secId,rowId,_this3._rows));},__source:{fileName:_jsxFileName,lineNumber:179}})));
+_this3.renderRow(rowData,secId,rowId,_this3._rows));},__source:{fileName:_jsxFileName,lineNumber:180}})));
 
 
 
 }else if(this.state.dataSource){
 return(
-_react2.default.createElement(_reactNative.ListView,_extends({},
+_react2.default.createElement(_deprecatedReactNativeListview2.default,_extends({},
 this.props,{
 ref:function ref(_ref2){return _this3._root=_ref2;},
 enableEmptySections:true,
 dataSource:this.state.dataSource,
-renderRow:this.props.renderRow,__source:{fileName:_jsxFileName,lineNumber:194}})));
+renderRow:this.props.renderRow,__source:{fileName:_jsxFileName,lineNumber:195}})));
 
 
 }
 return(
-_react2.default.createElement(_reactNative.View,_extends({ref:function ref(c){return _this3._root=c;}},this.props,{__source:{fileName:_jsxFileName,lineNumber:204}}),
+_react2.default.createElement(_reactNative.View,_extends({ref:function ref(c){return _this3._root=c;}},this.props,{__source:{fileName:_jsxFileName,lineNumber:205}}),
 this.renderChildren()));
 
 

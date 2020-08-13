@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { ListView, View } from "react-native";
+import { View } from "react-native";
+import ListView from 'deprecated-react-native-listview';
 import { connectStyle } from "native-base-shoutem-theme";
 
 import { SwipeRow } from "./SwipeRow";
