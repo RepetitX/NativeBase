@@ -88,7 +88,7 @@ class ActionSheetContainer extends Component {
             activeOpacity={1}
             style={{
               backgroundColor: "#fff",
-              height: this.state.length * 80,
+              height: this.state.items.length * 80,
               padding: 15,
               elevation: 4
             }}
