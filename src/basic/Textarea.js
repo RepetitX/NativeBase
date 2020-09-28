@@ -33,7 +33,7 @@ class Textarea extends Component {
 				placeholderTextColor={
 					this.props.placeholderTextColor ? this.props.placeholderTextColor : variables.inputColorPlaceholder
 				}
-				underlineColorAndroid="rgba(0,0,0,0)"
+				underlineColorAndroid="transparent"
 			/>
 		);
 	}

@@ -19,7 +19,7 @@ class Input extends NativeBaseComponent {
 				placeholderTextColor={
 					this.props.placeholderTextColor ? this.props.placeholderTextColor : variables.inputColorPlaceholder
 				}
-				underlineColorAndroid="rgba(0,0,0,0)"
+				underlineColorAndroid="transparent"
 			/>
 		);
 	}

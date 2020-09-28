@@ -33,7 +33,7 @@ multiline:true,
 placeholderTextColor:
 this.props.placeholderTextColor?this.props.placeholderTextColor:_platform2.default.inputColorPlaceholder,
 
-underlineColorAndroid:"rgba(0,0,0,0)",__source:{fileName:_jsxFileName,lineNumber:26}})));
+underlineColorAndroid:"transparent",__source:{fileName:_jsxFileName,lineNumber:26}})));
 
 
 }}]);return Textarea;}(_react.Component);
