@@ -5,16 +5,18 @@ TouchableNativeFeedback=ReactNative.TouchableNativeFeedback,View=ReactNative.Vie
 var Button=function Button(props){
 if(Platform["Version"]<=21){
 return(
-React.createElement(TouchableOpacity,{__source:{fileName:_jsxFileName,lineNumber:8}},
+React.createElement(TouchableOpacity,_extends({
+delayPressIn:0},
+props,{__source:{fileName:_jsxFileName,lineNumber:8}}),
+
 props.children));
 
 
 }
-
 return(
 React.createElement(TouchableNativeFeedback,_extends({
 delayPressIn:0},
-props,{__source:{fileName:_jsxFileName,lineNumber:15}}),
+props,{__source:{fileName:_jsxFileName,lineNumber:17}}),
 
 props.children));
 

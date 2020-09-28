@@ -13,7 +13,6 @@ const Button = props => {
             </TouchableOpacity>
         );
     }
-
     return (
         <TouchableNativeFeedback
             delayPressIn={0} // eslint-disable-line new-cap
