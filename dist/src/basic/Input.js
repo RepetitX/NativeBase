@@ -16,13 +16,10 @@ _this2._root=c;
 },
 editable:this.props.disabled?false:true},
 this.props,{
-
-style:_extends({borderBottomColor:'transparent'},this.props.style||{}),
-
 placeholderTextColor:
 this.props.placeholderTextColor?this.props.placeholderTextColor:_platform2.default.inputColorPlaceholder,
 
-underlineColorAndroid:"transparent",__source:{fileName:_jsxFileName,lineNumber:12}})));
+underlineColorAndroid:"rgba(0,0,0,0)",__source:{fileName:_jsxFileName,lineNumber:12}})));
 
 
 }}]);return Input;}(_NativeBaseComponent3.default);
