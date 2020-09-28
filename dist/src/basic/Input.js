@@ -16,6 +16,9 @@ _this2._root=c;
 },
 editable:this.props.disabled?false:true},
 this.props,{
+
+style:_extends({borderBottomColor:'transparent'},this.props.style||{}),
+
 placeholderTextColor:
 this.props.placeholderTextColor?this.props.placeholderTextColor:_platform2.default.inputColorPlaceholder,
 
