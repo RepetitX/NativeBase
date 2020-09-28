@@ -5,20 +5,23 @@ const { TouchableNativeFeedback, View, Platform, TouchableOpacity } = ReactNativ
 const Button = props => {
     if (Platform["Version"] <= 21) {
         return (
-            <TouchableOpacity>
-              {props.children}
+            <TouchableOpacity
+                delayPressIn={0} // eslint-disable-line new-cap
+                {...props}
+            >
+                {props.children}
             </TouchableOpacity>
-          );
+        );
     }
-    
-  return (
-    <TouchableNativeFeedback
-      delayPressIn={0} // eslint-disable-line new-cap
-      {...props}
-    >
-      {props.children}
-    </TouchableNativeFeedback>
-  );
+
+    return (
+        <TouchableNativeFeedback
+            delayPressIn={0} // eslint-disable-line new-cap
+            {...props}
+        >
+            {props.children}
+        </TouchableNativeFeedback>
+    );
 };
 
 module.exports = Button;
