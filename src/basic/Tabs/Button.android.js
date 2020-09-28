@@ -1,8 +1,16 @@
 const React = require("react");
 const ReactNative = require("react-native");
-const { TouchableNativeFeedback, View } = ReactNative;
+const { TouchableNativeFeedback, View, Platform, TouchableOpacity } = ReactNative;
 
 const Button = props => {
+    if (Platform["Version"] <= 21) {
+        return (
+            <TouchableOpacity>
+              {props.children}
+            </TouchableOpacity>
+          );
+    }
+    
   return (
     <TouchableNativeFeedback
       delayPressIn={0} // eslint-disable-line new-cap
